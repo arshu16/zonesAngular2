@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/reflect-metadata@0.1.3/Reflect.js"></script> <!-- https://www.npmjs.com/package/reflect-metadata -->
     <script src="https://unpkg.com/systemjs@0.19.31/dist/system.js"></script> <!-- https://github.com/systemjs/systemjs -->
     <script src="config.js"></script>
+    <script src="src/fps.js" async></script>
     <script>
       System.import('app')
         .catch((err) => {
@@ -20,8 +21,18 @@
   </head>
 
   <body>
-    <with-zone-app>
-      loading...
-    </with-zone-app>
+    <canvas id="mycanvas" width="300" height="30" style="position: fixed;right: 0;"></canvas>
+    <div style="width: 100%; margin-bottom: 20px;">
+      <div style="width: 100%; margin: 20px 0;">SVG's moving in zone other than angular</div>
+      <with-zone-app>
+        loading...
+      </with-zone-app>
+    </div>
+    <div style="width: 100%; margin-top: 20px;">
+      <div style="width: 100%; margin: 20px 0;">SVG's moving in angular's zone </div>
+      <without-zone-app>
+        loading...
+      </without-zone-app>
+    </div>
   </body>
 </html>

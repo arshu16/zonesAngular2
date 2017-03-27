@@ -4,11 +4,13 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app';
+import {withoutZoneAppComponent} from './app';
 import {BoxComponent} from './box.component';
 @NgModule({
 	declarations: [
 		AppComponent,
-		BoxComponent
+		BoxComponent,
+		withoutZoneAppComponent
 	],
 	imports: [
 		BrowserModule,
@@ -16,7 +18,7 @@ import {BoxComponent} from './box.component';
 		HttpModule
 	],
 	providers: [],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent, withoutZoneAppComponent]
 })
 export class AppModule {
 	
