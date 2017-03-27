@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 		width="20" height="20" stroke="black" [attr.fill]="selected ? 'red': 'transparent'"
 		strokeWidth="1"></svg:rect>
 	`
-});
-
+})
 export class BoxComponent {
 	@Input() box;
 	@Input() selected;

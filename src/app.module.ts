@@ -1,11 +1,10 @@
-import {BroserModule} from '@angular/platform-browser'; //For bootstrapping browsermodule
+import {BrowserModule} from '@angular/platform-browser'; //For bootstrapping browsermodule
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app';
 import {BoxComponent} from './box.component';
-
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -19,7 +18,6 @@ import {BoxComponent} from './box.component';
 	providers: [],
 	bootstrap: [AppComponent]
 })
-
 export class AppModule {
 	
 }

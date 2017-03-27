@@ -12,8 +12,7 @@ function getRandomInt(min, max) {
 			<svg:g box *ngFor="let box of boxes" [box]="box" [selected]="box.id == currentId"></svg:g>
 		</svg>
 	`
-});
-
+})
 export class AppComponent {
 
 	constructor(private zone: NgZone) {}
