@@ -10,11 +10,11 @@ Running code(That handles lots of computation/paint/redraw) in a zone outside of
 
 Expirement:
 Render 10000 svg boxes and bind them with mouse events. Move them around and check performance.
-Scenario 1: Run mouse events and changes in angular 2's zone
+Scenario 1: Run mouse events and changes in angular 2's zone																																																																															
 Scenario 2: Run mouse events and changes outside angular 2's zone
 
 Results:
-Scenario 1:  ~14-15 FPS (Frames per second)
+Scenario 1:  ~14-15 FPS (Frames per second)																																																																																																	
 Scenario 2:  ~42-45 FPS (Frames per second)
 
 So, as you can see, little optimization can lead to great improvements.
